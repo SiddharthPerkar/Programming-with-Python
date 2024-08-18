@@ -1,0 +1,31 @@
+#Ex. 18 :- Define a function color_mixer that receives two colors color1 and color2 
+           and returns the color resulting from mixing them in EITHER ORDER. 
+           The colors received are either red, blue, or yellow and you should return:
+
+Magenta if the colors mixed are red and blue
+
+Green if the colors mixed are blue and yellow
+
+Orange if the colors mixed are yellow and red
+
+Examples:
+
+>>> color_mixer('red', 'blue')
+'Magenta'
+>>> color_mixer('blue', 'red')
+'Magenta'
+>>> color_mixer('blue', 'yellow')
+'Green'
+>>> color_mixer('yellow', 'red')
+'Orange'
+
+
+Solution :-
+
+def color_mixer(color1, color2):
+    if color1 == 'red' and color2 == 'blue' or color1 == 'blue' and color2 == 'red':
+        return 'Magenta'
+    elif color1 == 'blue' and color2 == 'yellow' or color1 == 'yellow' and color2 == 'blue':
+        return 'Green'
+    elif color1 == 'yellow' and color2 == 'red' or color1 == 'red' and color2 == 'yellow':
+        return 'Orange'
