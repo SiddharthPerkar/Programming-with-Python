@@ -1,0 +1,27 @@
+#Ex. 20 :- The function greatest_parameter should return the greatest value passed as a parameter.
+
+Examples:
+
+greatest_parameter(2, 4, 9, 1, 1)  # 9
+greatest_parameter(0, 0, 1, 0, 0)  # 1
+greatest_parameter(0, -1, -1, -1, 0)  # 0
+
+
+Solution :- 
+
+def greatest_parameter(a, b, c, d, e):
+    greatest = a
+
+    if b > a:
+        greatest = b
+
+    if c > greatest:
+        greatest = c
+
+    if d > greatest:
+        greatest = d
+
+    if e > greatest:
+        greatest = e
+
+    return greatest
