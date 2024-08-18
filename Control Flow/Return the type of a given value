@@ -1,0 +1,24 @@
+#Ex. 11 :- Write a function using if statements that takes a value, and returns the type of that particular value.
+
+Example:
+
+which_type(2) == 'integer'
+which_type("cookies, now!") == 'string'
+which_type(False) == 'boolean'
+which_type(42.0) == 'float'
+
+Solution :- 
+
+def which_type(val):
+    
+    if isinstance(val, bool):
+        return 'boolean'
+    
+    if isinstance(val,int):
+        return 'integer'
+
+    elif isinstance(val,str):
+        return 'string'
+
+    elif isinstance(val,float):
+        return 'float'
