@@ -1,0 +1,30 @@
+#Ex. 21 :- Write a function that returns the number of days in a given month. (non leap years)
+
+how_many_days_in('December') == 31
+how_many_days_in('February') == 28
+
+
+Solution :- 
+
+def how_many_days_in(month):
+    if month == 'January' or month == 'March' or month == 'May' or month == 'July' or month == 'August' or month == 'October' or month == 'December':
+        return 31
+    elif month == 'April' or month == 'June' or month == 'September' or month == 'November':
+        return 30
+    else:  # Only February left
+        return 28
+
+
+Advance solution :-
+
+def how_many_days_in(month):
+    months_with_31 = ['January', 'March', 'May', 'July', 'August', 'October', 'December']
+    months_with_30 = ['April', 'June', 'September', 'November']
+    months_with_28 = ['February']
+
+    if month in months_with_31:
+        return 31
+    elif month in months_with_30:
+        return 30
+    elif month in months_with_28:
+        return 28
