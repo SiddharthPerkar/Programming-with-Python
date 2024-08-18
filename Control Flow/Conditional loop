@@ -7,3 +7,4 @@ else:
     print("You can take bus")
     else:
       print("You should stay home!")
+ 
