@@ -1,0 +1,15 @@
+# Ex. 7 :- Define a function convert_bool_to_binary that receives a boolean and returns 1 if it is true and 0 if it is false.
+
+Examples:
+
+>>> convert_bool_to_binary(True)
+1
+>>> convert_bool_to_binary(False)
+0
+
+Solution :- 
+
+def convert_bool_to_binary(a_boolean):
+    if a_boolean:
+        return True
+    return False
