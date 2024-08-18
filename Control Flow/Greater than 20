@@ -1,0 +1,16 @@
+Ex. 8 :- Define a function greater_than_20 that receives a number and if it is greater than 20 returns True 
+         and if not returns False.
+
+Examples:
+
+>>> greater_than_20(42)
+True
+>>> greater_than_20(19)
+False
+
+Solution :- 
+
+def greater_than_20(number):
+    if number > 20:
+        return True 
+    return False
