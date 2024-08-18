@@ -1,0 +1,9 @@
+users_age = input('Enter your age :')
+age = int(users_age)
+if age > 18:
+  print("You can drive")
+else:
+  if age > 14:
+    print("You can take bus")
+    else:
+      print("You can't drive!")
