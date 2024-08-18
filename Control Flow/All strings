@@ -1,0 +1,19 @@
+#Ex. 15 :- Modify the function all_strings so it returns True if all the parameters passed are of type string (str).
+
+Hint: you can use the type function. Use the run code button to run the example.
+
+Examples:
+
+all_strings('j', 'rmotr', 'Python')  # True
+all_strings('', 'rmotr', 'Python')  # True
+
+all_strings(3, 'rmotr', 'Python')  # False
+all_strings('hello', None, 'Python')  # False
+
+
+Solution :- 
+
+def all_strings(a, b, c):
+    if type(a) == str and type(b) == str and type(c) == str:
+        return True
+    return False
