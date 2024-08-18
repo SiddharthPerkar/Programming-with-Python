@@ -6,4 +6,4 @@ else:
   if age > 14:
     print("You can take bus")
     else:
-      print("You can't drive!")
+      print("You should stay home!")
