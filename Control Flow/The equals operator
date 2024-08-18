@@ -1,0 +1,7 @@
+x = 10
+if x == 10:
+    message_1 = "Hello World"
+    message_2 = "This is Github"
+
+print(message_1)
+print(message_2)
