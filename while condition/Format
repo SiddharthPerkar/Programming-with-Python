@@ -1,0 +1,18 @@
+#Format
+
+while[condition]:
+    [Do something/Body]
+
+#Print 3 times Hello World using while loop 
+
+counter = 0
+while counter < 4 :
+    print("Hello World")
+    counter += 1
+
+#Print Number 1, Number 2, Number 3 likewise 
+
+counter = 1 
+while counter < 4 :
+    print("Number {}".format(counter))
+    counter += 1 
