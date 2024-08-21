@@ -1,0 +1,23 @@
+#Ex. 3 :- Complete the function double_down so that it receives a number num and an integer times_doubled 
+  and returns num doubled times_doubled amount of times. Use a while loop to do this.
+
+Examples:
+
+>>>  double_down(3, 3)
+24
+
+>>>  double_down(2, 0)
+2
+
+>>>  double_down(4, 1)
+8
+
+
+Solution :- 
+
+def double_down(num, times_doubled):
+    count = 0
+    while count < times_doubled:
+        num *= 2
+        count += 1
+    return num
