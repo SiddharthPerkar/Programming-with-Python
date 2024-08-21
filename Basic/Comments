@@ -1,0 +1,11 @@
+#Getting familiar with comments
+
+Comments in Python is the inclusion of short descriptions along with the code to increase its readability. 
+
+For single line of comment use # 
+#This is an example of comment.
+
+For multiple line of comment use """ """ or ''' '''  (3times left and 3times right)
+"""This is just
+an
+example"""
