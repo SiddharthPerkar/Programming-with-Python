@@ -1,0 +1,21 @@
+# Ex. 1 :- Use a while loop to complete the function get_lucky so that it receives a string poor_string 
+           and an integer lucky_number as a parameter. Add "7" to poor_string an amount of times equal to lucky_number
+           and return the result.
+
+Examples:
+
+>>>  get_lucky("rabbit foot", 3)
+'rabbit foot777'
+
+>>>  get_lucky("shiny penny", 5)
+'shiny penny77777'
+
+
+Solution :- 
+
+def get_lucky(poor_string, lucky_number):
+    count = 0
+    while count < lucky_number:
+        poor_string += "7"
+        count  += 1
+    return poor_string
