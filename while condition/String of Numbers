@@ -1,0 +1,20 @@
+#Ex. 2 :- Write a function called string_of_numbers that receives an integer length and uses a while loop to create and return a string of consecutive numbers from 1 up to the number length.
+
+Examples:
+
+>>>  string_of_numbers(3)
+'123'
+
+>>>  string_of_numbers(5)
+'12345'
+
+
+Solution :- 
+
+def string_of_numbers(length):
+    number_string = ""
+    count = 1
+    while count <= length:
+        number_string += str(count)
+        count += 1
+    return number_string
