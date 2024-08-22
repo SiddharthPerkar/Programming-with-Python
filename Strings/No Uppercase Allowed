@@ -1,0 +1,34 @@
+#Ex. 4 :- Complete the function neutralize_uppercase so that it returns stringy the same as it was received 
+          if there are no capital letters in it or an empty string "" if there were. 
+          You need to use a while loop to go through each letter of the string one at a time to check for uppercase letters.
+
+Examples:
+
+# String has no uppercase letters so returns input string unchanged
+>>>  neutralize_uppercase("snitch") == "snitch"
+'snitch'
+
+# String has uppercase letters so returns empty string
+>>>  neutralize_uppercase("eXpelliarMus")
+''
+
+
+# Solution using while loop and break
+def neutralize_uppercase(stringy):
+    count = 0
+    while count < len(stringy):
+        if stringy[count] == stringy[count].upper():
+            stringy = ""
+            break
+        count += 1
+    return stringy
+
+
+# Solution using while loop and return
+def neutralize_uppercase(stringy):
+    count = 0
+    while count < len(stringy):
+        if stringy[count] == stringy[count].upper():
+            return ""
+        count += 1
+    return stringy
