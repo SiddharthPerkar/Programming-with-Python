@@ -1,0 +1,34 @@
+#Ex. 3 :- Write a function insert_dashes that receives a string and inserts dashes every 3 characters. Example:
+
+insert_dashes('Hello World')  # 'Hel-lo -Wor-ld'
+insert_dashes('AwesomePythonRmotr')  # 'Awe-som-ePy-tho-nRm-otr-'
+
+
+Solution :- 
+
+def insert_dashes(a_string):
+    counter = 1
+    res = ""
+    for char in a_string:
+        res += char
+        if counter == 3:
+            res += '-'
+            counter = 1
+        else:
+            counter += 1
+
+    return res
+
+
+Another solution :- 
+
+def insert_dashes(a_string):
+    counter = 1
+    res = ""
+    while counter <= len(a_string):
+        char = a_string[counter - 1]
+        res += char
+        if counter % 3 == 0:
+            res += '-'
+        counter += 1
+    return res
