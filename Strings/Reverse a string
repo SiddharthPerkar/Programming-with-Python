@@ -1,0 +1,26 @@
+#Ex. 1 :- Write a function reverse_string that receives a string and returns it reversed. Example:
+
+reverse_string('Hello World')  # 'dlroW olleH'
+reverse_string('Python')  # nohtyP
+
+
+Solution :- 
+
+def reverse_string(a_string):
+    return a_string[::-1]
+
+Another solution :- 
+
+def reverse_string(a_string):
+    result = ''
+    for idx in range(len(a_string) - 1, -1, -1):
+        result += a_string[idx]
+    return result
+
+Another solution :- 
+
+def reverse_string(a_string):
+    result = ''
+    for idx in range(0, len(a_string)):
+        result += a_string[len(a_string) - 1 - idx]
+    return result
