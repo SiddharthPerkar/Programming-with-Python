@@ -1,0 +1,9 @@
+Ex. 1 :- Create a function that uses the keyword in to verify if there are any good students in his list. 
+         Check for the string good_student and return True or False depending if it is present.
+
+Solution :- 
+
+def check_for_good_student(good_bad_student_list):
+    if "good_student" in good_bad_student_list:
+        return True 
+    return False
