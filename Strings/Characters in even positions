@@ -1,0 +1,24 @@
+#Ex. 6 :- Write a function chars_in_even_positions that receives a string and returns all the characters in even positions.
+
+Example:
+
+chars_in_even_positions('Marvelous')  # avlu
+chars_in_even_positions('Python')  # yhn
+
+
+Solution :- 
+
+def chars_in_even_positions(a_string):
+    res = ""
+    pos = 1
+    for char in a_string:
+        if pos % 2 == 0:
+            res += char
+        pos += 1
+    return res
+
+
+Another solution :- 
+
+def chars_in_even_positions(a_string):
+    return a_string[1::2]
