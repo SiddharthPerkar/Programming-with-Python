@@ -1,0 +1,8 @@
+#Ex. 9 :- Complete the get_third_elem function so it always returns the third element in the list. 
+          Because the first two elements looked at us funny.
+
+
+Solution :- 
+
+def get_third_elem(list_of_stuff):
+    return list_of_stuff[2]
