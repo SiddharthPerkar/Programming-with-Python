@@ -1,0 +1,18 @@
+#Ex. 7 :- Write a function max_char that receives a string and returns the "maximum" character in it.
+          Max is defined as a < b < ... < z ignoring uppercase chars (all strings provided will be lowercase).
+          Important: If the string received is empty, the result should be an empty string. 
+Example:
+
+max_char('azg')  # 'z'
+max_char('')  # ''
+
+
+Solution :- 
+
+def max_char(a_string):
+    max_found = None
+    for char in a_string:
+        if max_found is None or char > max_found:
+            max_found = char
+
+    return max_found or ''
