@@ -1,0 +1,10 @@
+Ex. 2 :- Write a function list_2_tuple that takes a list as a parameter and returns a tuple containing the same elements. Example:
+
+list_2_tuple([1, 'c', 9, False])  # (1, 'c', 9, False)
+list_2_tuple([2])                 # (2,)
+
+Solution :- 
+
+def list_2_tuple(a_list):
+    return tuple(a_list)
+
