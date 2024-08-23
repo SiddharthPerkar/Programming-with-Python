@@ -1,0 +1,35 @@
+#Ex. 4 :- The function insert_human receives a list, a position and an element to insert (similar to the insert method).
+          The difference is that the position is specified in a "human" manner. 
+
+Examples:
+
+list_1 = ['a', 'b', 'c']
+
+insert_human(list_1, 'first', 'Z')
+print(list_1)  # ['Z', 'a', 'b', 'c']
+
+list_2 = ['a', 'b', 'c']
+
+insert_human(list_2, 'second', 'Z')
+print(list_2)  # ['a', 'Z','b', 'c']
+
+list_3 = ['a', 'b', 'c']
+
+insert_human(list_3, 'last', 'Z')
+print(list_3)  # ['a','b', 'c', 'Z']
+
+
+Solution :-
+
+def insert_human(a_list, position, elem):
+
+    if position == "first" :
+        index = 0
+    elif position == "second" :
+        index = 1
+    elif position == "third":
+        index = 2 
+    else :
+        index = len(a_list)
+
+    a_list.insert(index,elem)
