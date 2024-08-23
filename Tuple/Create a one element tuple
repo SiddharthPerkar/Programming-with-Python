@@ -1,0 +1,10 @@
+Ex. 1 :- The function one_element_tuple currently returns the value None. Modify it to return a tuple containing just 1 element, the one passed as a parameter:
+
+one_element_tuple('a')  # ('a', )
+one_element_tuple(9)    # (9, )
+
+Solution :- 
+
+
+def one_element_tuple(arg):
+    return (arg, )
