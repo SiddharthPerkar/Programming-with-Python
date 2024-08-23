@@ -1,0 +1,8 @@
+Ex. 12 :- Complete the function get_bookmark_index
+          so that it searches the parameter list_of_pages and returns the index of the word "bookmark".
+
+
+Solution :- 
+
+def get_bookmark_index(list_of_pages):
+    return list_of_pages.index("bookmark")
