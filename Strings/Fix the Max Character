@@ -1,0 +1,18 @@
+#Ex. 10 :- The function provided is broken. Your job is to figure out what's going on and fix it.
+
+def find_max_char(a_string):
+    max_found = None
+    for char in a_string:
+        if char > max_found:
+            max_found = char
+    return max_found
+
+
+Solution :- 
+
+def find_max_char(a_string):
+    max_found = ''
+    for char in a_string:
+        if char > max_found:
+            max_found = char
+    return max_found
