@@ -1,0 +1,17 @@
+#Ex. 5 :- What? You want more practice with lists?! Geez, you must really like them. Fine.
+
+This time, we're going to expand on the previous assignment.
+
+What's better than a list with one element? A list with three elements. Great!
+
+Use the three word variables word1, word2 and word3 to create a list pizza_time that contains those three words.
+
+
+Solution :-
+
+word1 = "pizza"
+word2 = "burger"
+word3 = "cheese burger"
+
+# Now make a list containing each of these words and store in a variable called `pizza_time`.
+pizza_time = [word1, word2, word3]
