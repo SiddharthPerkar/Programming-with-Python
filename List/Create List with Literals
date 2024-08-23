@@ -1,0 +1,6 @@
+#Ex. 3 :- For this assignment, create a list named heterogeneous and put an integer, a string, and a boolean in it. 
+          In that order.
+
+Solution :- 
+
+heterogeneous = [3,"yes sir",True]
