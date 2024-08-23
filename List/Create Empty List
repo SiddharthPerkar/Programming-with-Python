@@ -1,0 +1,12 @@
+#Ex. 2 :- It's time to dive into one of most common types of collections, lists!
+
+They are great for storing groups of data, especially if order is important.
+
+A list is denoted by square brackets and looks like this:
+
+a_list = ["i", "am", "a", "list!"]
+
+
+Solution :- 
+
+my_list = []
