@@ -1,0 +1,15 @@
+Ex. 10 :- Complete the function count_elems_with_s so that it uses a for loop to go through each item in list_of_treasure.
+
+If the letter 's' is in the item, keep count of it.
+
+Return the final count of items that contain the letter 's'.
+
+
+Solution :- 
+
+def count_elems_with_s(list_of_treasure):
+    count = 0
+    for treasure in list_of_treasure:
+        if 's' in treasure:
+            count += 1
+    return count
