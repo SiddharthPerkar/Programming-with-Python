@@ -1,0 +1,16 @@
+#Ex. 5 :- Write a function that receives a dictionary with only String keys and returns the longest key in the dictionary. 
+
+Example:
+
+longest_key({'hello': 'World', 'abc': 123})  # hello
+longest_key({})  # None
+
+
+Solution :- 
+
+def longest_key(a_dict):
+    longest = None
+    for key in a_dict.keys():
+        if not longest or len(key) > len(longest):
+            longest = key
+    return longest
