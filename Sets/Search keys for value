@@ -1,0 +1,14 @@
+#Ex. 3 :- Write a function that receives a dictionary and a value to search for as input. 
+          Return a set with all the keys from the dictionary that have that value.
+
+search_keys_for_value({"name" : "Billy", "age" : 12, "fav_num" : 12}, 12)
+
+# {"age", "fav_num"}
+
+
+def search_keys_for_value(a_dictionary, search_term):
+    res = set()
+    for key, value in a_dictionary.items():
+        if value == search_term:
+            res.add(key)
+    return res
