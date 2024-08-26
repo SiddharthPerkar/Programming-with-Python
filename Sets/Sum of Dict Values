@@ -1,0 +1,82 @@
+#Ex. 13 :- Write a function sum_of_dict_values that receives 3 dictionaries as parameters: d1, d2, and d3. 
+Get the sum of the values for each matching key 3 dictionaries, and return a new dictionary showing the results of each. 
+If there is a non-integer as a value, set the value to None for that key.
+
+Example:
+
+Add all the values with the key 'a' together, and you get the sum 22.
+
+d1 = {
+    'a': 10,
+    'b': 30,
+    'c': 5
+}
+
+d2 = {
+    'a': 7,
+    'b': 22,
+    'c': 90
+}
+
+d3 = {
+    'a': 5,
+    'b': 1,
+    'c': 'hello'
+}
+
+result == {
+    'a': 22,
+    'b': 53,
+    'c': None  # d3 has an invalid value, can't be handled
+}
+
+sum_of_dict_values(d1, d2, d3) == result
+
+
+
+Solution :- 
+
+def _add_values_to_dict(processing_dict, agg_dict):
+    for key, value in processing_dict.items():
+        agg_dict.setdefault(key, 0)
+        new_value = None
+        if type(value) is int and agg_dict[key] is not None:
+            new_value = agg_dict[key] + value
+        agg_dict[key] = new_value
+
+
+def sum_of_dict_values(d1, d2, d3):
+    result = {}
+
+    _add_values_to_dict(d1, result)
+    _add_values_to_dict(d2, result)
+    _add_values_to_dict(d3, result)
+
+    return result
+
+
+Another solution :- 
+
+def sum_of_dict_values(d1, d2, d3):
+    result = {}
+    for key, value in d1.items():
+        result.setdefault(key, 0)
+        if result[key] is not None and type(value) is int:
+            result[key] += value
+        else:
+            result[key] = None
+
+    for key, value in d2.items():
+        result.setdefault(key, 0)
+        if result[key] is not None and type(value) is int:
+            result[key] += value
+        else:
+            result[key] = None
+
+    for key, value in d3.items():
+        result.setdefault(key, 0)
+        if result[key] is not None and type(value) is int:
+            result[key] += value
+        else:
+            result[key] = None
+    return result
