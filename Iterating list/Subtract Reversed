@@ -8,7 +8,7 @@ Special case: If the list is empty, should return 0. Check the tests for details
 
 
 Solution :- 
-
+  
 def subtract_reversed(a_list):
     if len(a_list) == 0:
         return 0
