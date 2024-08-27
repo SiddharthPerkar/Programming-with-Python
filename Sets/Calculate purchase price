@@ -2,7 +2,7 @@
 Following the same structure from the previous assignment, define a function calculate_purchase_price 
 that receives a purchase dictionary and computes the sum of the prices of all the books contained in that purchase. 
 The function, by default, should NOT update the value in the purchase dict.
-
+ 
 Example:
 
 purchase = {
