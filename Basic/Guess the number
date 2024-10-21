@@ -1,0 +1,13 @@
+#Guess the number game
+
+answer = 99
+
+users_guess = None
+users_guess_int = None
+
+while users_guess_int != answer:
+  users_guess = input("Guess a number:")
+  users_guess_int = int(users_guess)
+
+print("Guessed Correctly")
+
