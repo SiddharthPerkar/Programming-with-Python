@@ -1,0 +1,56 @@
+#Itertools :- 
+
+import itertools
+
+#used to chain or concatenate the variables
+d1 = ['A', 'B', 'C']
+d2 = 'DEF'
+for letter in itertools.chain(d1, d2, 'XYZ'):
+  print(letter)
+
+
+#compress
+
+users = [ 
+  'jane@gmail.com'
+  'kane@gmail.com'
+  'ross@gmail.com'
+  'hoss@gmail.com'
+]
+
+women = [0, 1, 1, 0]
+men = [1, 0, 0, 1]
+
+print("Women:")
+for user in itertools.compress(users, women):
+  print(user)
+
+print('\n ------ \n')
+
+print("Men:")
+for user in itertools.compress(users, men):
+  print(user)
+
+
+#chain.from_iteratable (flatten)
+
+it = [['A', 'B', 'C'], 'DEF', ('G', 'H', 'I')]
+for elem in itertools.chain.from_iterable(it):
+  print(elem)
+
+
+#repeat 
+
+for e in itertools.repeat('john@gmail.com', 5):
+  print(e)
+
+
+#cycle 
+
+count = 1 
+for elem in itertools.cycle('ABC'):
+  print(elem)
+
+  if count == 5:
+    break
+  count += 1 
