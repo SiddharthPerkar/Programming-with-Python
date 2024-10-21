@@ -11,3 +11,17 @@ while users_guess_int != answer:
 
 print("Guessed Correctly")
 
+
+Another solution using break statement :- 
+
+answer = 99
+
+users_guess = None
+users_guess_int = None
+
+while users_guess_int != answer:
+  users_guess = input("Guess a number:")
+  if int(users_guess) == 99:
+    break
+
+print("Guessed Correctly")
