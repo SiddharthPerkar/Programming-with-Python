@@ -1,0 +1,12 @@
+#Break and Continue
+
+users = [1, 5, 18, 45, 61]
+found_it = False
+for user in users: 
+  print(user)
+  if user == 18:
+    found_it = True
+    break
+found_it
+
+
