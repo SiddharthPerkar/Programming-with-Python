@@ -31,7 +31,7 @@ Another Solution using while statement :-
 
 answer = 99
 
-while users_guess_int != answer:
+while True:
   users_guess = input("Guess a number:")
   if int(users_guess) == 99:
     break
