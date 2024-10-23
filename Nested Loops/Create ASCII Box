@@ -1,0 +1,16 @@
+#Ex. 1 :- Create ASCII Box
+Write a function create_box that takes three inputs: height (rows), width (columns),
+and a character char and creates a height × width box using the character char.
+
+
+
+Solution :- 
+
+def create_box(height, width, char):
+    res = ""
+    for h in range(height):
+        line = ''
+        for w in range(width):
+            line += char
+        res += line + '\n'
+    return res
