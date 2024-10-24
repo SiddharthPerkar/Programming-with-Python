@@ -1,0 +1,49 @@
+#Ex. 6 :- An identity matrix is defined in the following way:
+
+
+Basically, all the elements in the diagonal are ones (1s) and the rest are zeros (0s).
+
+An identity matrix has a size associated. For example, this is an identity matrix of size 3:
+
+1 0 0
+0 1 0
+0 0 1
+And this is a matrix of size 5:
+
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 1 0
+0 0 0 0 1
+A matrix is represented, Pythonically, with a "list of lists". Example:
+
+# size 3
+size_3_matrix = [
+    [1, 0, 0],
+    [0, 1, 0],
+    [0, 0, 1],
+]
+# size 5
+size_5_matrix = [
+    [1, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1],
+]
+
+
+
+Solution :- 
+
+def identity_matrix(size):
+    matrix = []
+    for i in range(size):
+        row = []
+        for j in range(size):
+            if i == j: 
+                row.append(1)
+            else:
+                row.append(0)
+        matrix.append(row)
+    return matrix
