@@ -1,0 +1,31 @@
+__init__ used for ? 
+
+==> __init__ method in Python is used to initialize objects of a class. It is also called a constructor.
+
+# A Sample class with init method
+class Person:
+
+    # init method or constructor
+    def __init__(self, name):
+        self.name = name
+
+    # Sample Method
+    def say_hi(self):
+        print('Hello, my name is', self.name)
+
+
+# Creating different objects
+p1 = Person('Sid')
+p2 = Person('Abhi')
+p3 = Person('Sam')
+
+p1.say_hi()
+p2.say_hi()
+p3.say_hi()
+
+
+Output :- 
+
+Hello, my name is Sid
+Hello, my name is Abhi
+Hello, my name is Sam
