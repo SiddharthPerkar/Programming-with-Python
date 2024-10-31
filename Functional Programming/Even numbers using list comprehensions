@@ -1,0 +1,8 @@
+#Ex. 4 :- Write a function that receives a list of numbers and returns only the even elements. You must use List comprehensions to solve it.
+
+even_numbers([5, 4, 3, 2, 1]) == [4, 2]
+
+Solution :- 
+
+def even_numbers(a_list):
+    return [e for e in a_list if e%2==0]
